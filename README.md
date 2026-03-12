@@ -30,7 +30,6 @@ data = {
     'Internship': [0, 0, 1, 0, 1, 1, 1, 1],  # 0 = No, 1 = Yes
     'Placement': [0, 0, 0, 1, 1, 1, 1, 1]    # Target: 0 = Not Placed, 1 = Placed
 }
-
 df = pd.DataFrame(data)
 X = df[['Hours_Studied', 'Previous_Score', 'Internship']]
 y = df['Placement']
@@ -49,12 +48,11 @@ new_student_scaled = scaler.transform(new_student)
 placement_pred = model.predict(new_student_scaled)
 placement_prob = model.predict_proba(new_student_scaled)
 print(f"\nPredicted Placement Status: {'Placed' if placement_pred[0]==1 else 'Not Placed'}")
-print(f"Probability of Placement: {placement_prob[0][1]:.2f}")
-  
+print(f"Probability of Placement: {placement_prob[0][1]:.2f}")  
 */
 ```
-
 ## Output:
 <img width="718" height="421" alt="image" src="https://github.com/user-attachments/assets/019e4746-bd16-4c39-a970-64daf5db7c82" />
+
 ## Result:
 Thus the program to implement the the Logistic Regression Using Gradient Descent is written and verified using python programming.
