@@ -58,4 +58,3 @@ print(f"Probability of Placement: {placement_prob[0][1]:.2f}")
 <img width="718" height="421" alt="image" src="https://github.com/user-attachments/assets/019e4746-bd16-4c39-a970-64daf5db7c82" />
 ## Result:
 Thus the program to implement the the Logistic Regression Using Gradient Descent is written and verified using python programming.
-
